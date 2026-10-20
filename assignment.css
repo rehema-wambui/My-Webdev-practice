@@ -1,4 +1,4 @@
-/* Global Styles & Variables */
+
 :root {
   --primary-color: #5fcf80;
   --primary-hover: #3ac162;
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
 
-/* Header / Navbar Styling */
+
 #header {
   background: #ffffff;
   transition: all 0.5s;
@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
-/* Header Solid Green Button */
 .btn-get-started {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -73,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-/* Hero Section Styling */
 #hero {
   width: 100%;
   height: calc(100vh - 70px);
@@ -84,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 68px;
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 #hero::before {
@@ -118,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--body-font);
 }
 
-/* Outlined White Hero Button */
 .btn-hero {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -140,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 32px;
