@@ -1,0 +1,153 @@
+/* Global Styles & Variables */
+:root {
+  --primary-color: #5fcf80;
+  --primary-hover: #3ac162;
+  --heading-font: 'Raleway', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+/* Header / Navbar Styling */
+#header {
+  background: #ffffff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(117, 101, 101, 0.05);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #37423b;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Header Solid Green Button */
+.btn-get-started {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 8px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #ffffff;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+}
+
+.btn-get-started:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff;
+}
+
+/* Hero Section Styling */
+#hero {
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 500px;
+  background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1920&auto=format&fit=crop') top center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 68px;
+  display: flex;
+  align-items: center;
+}
+
+#hero::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 15px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--body-font);
+}
+
+/* Outlined White Hero Button */
+.btn-hero {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  background: transparent;
+}
+
+.btn-hero:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
