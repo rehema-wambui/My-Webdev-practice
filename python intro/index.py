@@ -20,7 +20,7 @@ age1 = 43
 # Boolean
 is_stedent = True
 is_paid = False
-
+ 
 # Float
 price = 123.3
 height = 1.54
