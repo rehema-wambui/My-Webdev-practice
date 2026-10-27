@@ -16,4 +16,8 @@ price = float(input("Enter the price: "))
 Quantity = float(input("Enter the quality: "))
 total_amount = price * Quantity
 print(f"Total cost is Ksh {total_amount}")
+
 # ask the user for amount paid and calculate the change due assuming amount paid is sufficient
+amount_paid = float(input("Enter the amount paid: "))
+change_due = amount_paid - total_amount
+print(f"Change due is Ksh {change_due}")
