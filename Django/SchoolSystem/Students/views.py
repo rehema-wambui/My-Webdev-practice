@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def add_student(request):
-    return render(request, 'Students/addstudent.html')
+def addstudent(request):
+    return render(request, 'addstudent.html')
