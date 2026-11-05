@@ -1,9 +1,13 @@
 {% extends 'base.html'%}
 {% block title %}Login{% endblock %}
+{% load static %}
 {% block content %}    
     
 
     <h2>Login Form</h2>
+
+    <img src="{% static 'images/loginimage.png' %}" alt="Login">
+
     <form method="post">
         {% csrf_token %}
         <label for="username">Username:</label>

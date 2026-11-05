@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
+<!-- basically an intro saying all styles and stuff are in base.html  -->
 {% block title %}Register{% endblock %}
-
+<!-- its like a title tag like the one in html but like different sytax -->
+ <!-- the block title part is like the opening tag while the endblock is like tthe closing  tag -->
+{% load static %}
+<!-- loads the static files -->
 {% block content %}
 
 
     <h2>Register Here</h2>
-
+    <img src="{% static 'images/fernandozhiminaicela-treatment-4099432_1920.jpg'%}" alt="">
 
 
 
 {% endblock %}
+<!-- the block content is basically the body  -->
